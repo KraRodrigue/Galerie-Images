@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 30vh;
+    /**border: 1px solid red ;**/
+    padding: 5px;
+}
+
+/**la navigaation a deux boite nav1 qui contient le logo , les ithemes, le bouton , la nav2 qui a le input recherche et envoyer**/
+.nvg{
+   /** border: 1px solid blue ;**/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nvg1{
+    /**border: 3px solid yellow ;**/
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+.nvg1 .logo{
+    /**border: 1px solid blue ;**/
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nvg1 .logo img{
+    height: 95%;
+    width: 60%;
+}
+.nvg1 .nav-item{
+   /** border: 1px solid blue ;**/
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.nvg1 .nav-item a{
+    color: #2f2b2b;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: .5s ease-in-out;
+}
+.nvg1 .nav-item a:hover{
+    color: #1264C0;
+}
+
+.nvg1 .btn{
+   /** border: 1px solid blue ;**/
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nvg1 .btn button{
+    width: 120px;
+    height: 45px;
+    font-size: 17px;
+    color:  #2f2b2b;
+    background-color: transparent;
+    border: 1px solid   #2f2b2b;
+    border-radius: 6px;
+    transition: .5s ease-in-out;
+}
+.nvg1 .btn button:hover{
+    background-color: #1264C0;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+}
+
+.nvg2{
+   /** border: 3px solid yellow ;**/
+    width: 93%;
+    height: 38%;
+    display: flex;
+    margin-top: 10px;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E5E5;
+}
+.nvg2 .search{
+    width: 85%;
+    border: none;
+    height: 70%;
+    background-color: #E5E5E5;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.nvg2 .search:focus{
+    outline: none;
+}
+
+.nvg2 .submit{
+    width: 10%;
+    height: 65%;
+    font-size: 17px;
+    background-color: #1264C0;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    transition: .5s ease-in-out;
+}
+
+.nvg2 .submit:hover{
+    background-color: #0d17a9;
+}
+
+
+/*** le corps de ma page qui contient 2 boite , le premier avec avec des bouton  pour aller sur les differentes parties et la deuxiemme boite poure le images  **/
+
+main{
+    margin-top: 20px;
+   /** border: 2px solid black;**/
+    height: auto;
+    width: 100%;
+    padding:0%  3.5% ;
+    display: flex;
+    
+}
+
+.box1{
+    border: 1px solid rgba(90, 79, 79, 0.858);
+    width: 20%;
+    height: 90vh;
+    overflow: scroll;
+    padding:20px 10px;
+}
+.box1 a{
+    color: #2f2b2b;
+    font-size: 25px;
+    border: 1px solid #2f2b2b;
+    border-radius: 6px;
+    transition: .3s ease-in-out;
+}
+
+.box1 a:hover{
+    background-color: #b1b2cbb5;
+}
+
+.box1 .Fleurs{
+    margin-bottom:30px;
+}
+.box1 .Fleurs a{
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.box1 .Consoles{
+    margin-bottom:30px;
+}
+.box1 .Consoles a{
+    margin: 5px;
+    padding: 5px;
+}
+
+.box1 .meubles{
+    margin-bottom:30px;
+}
+.box1 .meubles a{   
+    padding: 5px;
+}
+
+.box1 .cascades{
+    margin-bottom:30px;
+}
+.box1 .cascades a{
+    font-size: 23px;
+    padding: 5px;
+}
+
+
+.box1 .metal{
+    margin-bottom:30px;
+}
+.box1 .metal a{
+    font-size: 23px;
+    padding: 5px;
+}
+
+
+.box2{
+    border-bottom: 1px solid rgba(90, 79, 79, 0.858);
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box22{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    border-bottom : 1px solid rgba(90, 79, 79, 0.858);
+    overflow-x: scroll;
+    align-items: center;
+}
+
+.box22 a{
+    color: #2f2b2b;
+    font-size: 25px;
+    border: 1px solid #2f2b2b;
+    border-radius: 6px;
+    display: block;
+    width: auto;
+}
+.box2 a:hover{
+    background-color: #b1b2cbb5;
+}
+
+
+.box22 div{
+   /** border: 2px solid red;**/
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box22 .Fleurs{
+    margin-left:30px;
+}
+.box2 .Fleurs a{
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.box22 .Consoles{
+    margin-left:30px;
+}
+.box22 .Consoles a{
+    margin: 5px;
+    padding: 5px;
+}
+
+.box22 .meubles{
+    margin-left:30px;
+}
+.box22 .meubles a{   
+    padding: 5px;
+}
+
+.box22 .cascades{
+    margin-left:30px;
+}
+.box22 .cascades a{
+    font-size: 23px;
+    padding: 5px;
+}
+
+
+.box22 .metal{
+    margin-left:30px;
+    
+}
+.box22 .metal a{
+    font-size: 23px;
+    padding: 5px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.les-images{
+    height: 85%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.les-images h3{
+    margin: 30px 0;
+    color: #1264C0;
+    font-size: 30px;
+}
+
+
+.img-logo1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-logo1 img{
+    position: relative;
+    z-index: 100;
+    height: 280px;
+    margin: 20px;
+    box-shadow: 2px 2px 4px 2px #201f1f47;
+}
+
+.img-logo1 img:hover{
+    box-shadow: 5px 5px 8px 8px #050505;
+}
+
+/**le pieds de ma pages*****/
+
+footer{
+    width: 100%;
+    height: 60vh;
+    background-color: #272424;
+}
+
+.ft-box{
+    padding: 0 4% ;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content:space-between ;
+    margin-top: 20px;
+    /**border: 2px solid red;**/
+}
+
+.ft-box .footer1{
+    width: 30%;
+    /**border: 2px solid red;*/
+}
+
+.ft-box .footer1 h4{
+    margin: 40px 0 10px 0;
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.ft-box .footer1 ul li{
+    color: #ccc2c2;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.ft-box .footer1 .fot-img {
+    display: flex;
+    gap: 30px;
+}
+
+.ft-box .footer1 .fot-img img{
+    height: 50px;
+    display: block;
+}
+
+
+.ft-box .footer1 .fot-text{
+    padding-top: 10px;
+}
+.ft-box .footer1 .fot-text a{
+    display: block;
+    color: #ccc2c2;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.footer2{
+    padding: 0 4%;
+    width: 100%;
+    height: 20%;
+   /** border: 2px solid red;**/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.footer2 img{
+    height: 75px;
+}
+
+.footer2 p{
+    font-size: 20px;
+    color: #ccc2c2;
+}
+
+.footer2 select{
+    border: none;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 6px;
+}
+.footer2 select:focus{
+    outline: none;
+}
+
+
+.footer2 select option{
+    color: #1264C0;
+    font-size: 30px;
+}
+
+
+/*** la partie pour les tablettes**/
+
+@media only screen and (min-width: 601px) and (max-width: 868px) {
+    .nvg1 .logo img{
+        width: 500px;
+    }
+
+  }
+  
+
+/*** le partie pour les tephone ***/
+
+@media only screen and (max-width: 600px) {
+    
+
+
+  }
+  
